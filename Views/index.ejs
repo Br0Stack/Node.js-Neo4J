@@ -1,0 +1,37 @@
+
+	<label>First Connection Port</label>
+	<br>
+	<input type="text" name="port_start">
+	<br>
+	<label>Destination Port</label><br>
+	<input type="text" name="port_end">
+	<br><br>
+	<input type="submit" value="Submit">
+</form>
+
+
+
+
+
+<h3>Ports</h3>
+
+<div style="float: left; width: 10%;">
+<u1>
+<% actors.forEach(function(actor){ %>
+	<li><%= actor.PortId %></li>
+<%}) %>
+</ul>
+</div>
+
+
+
+<div style="float: right; width: 50%;">
+<h3>Circuits</h3>
+<u1>
+<% movies.forEach(function(movie){ %>
+	<li><%= movie.CircuitID %></li>
+<%}) %>
+</ul>
+</div>
+
+
